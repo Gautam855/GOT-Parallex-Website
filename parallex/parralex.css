@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Game\ of\ Thrones.ttf);
+ }
+ 
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.foreground, .background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5.1);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+h1{
+    position: absolute;
+    top: 5rem;
+    right: 450px;
+    font-size: 3rem;
+    font-family: myFirstFont;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #253efb, 0 0 40px #253efb, 0 0 50px #253efb, 0 0 60px #253efb, 0 0 70px #253efb, 0 0 80px #253efb;
+}
+
+#title{
+    font-family: myFirstFont;;
+}
+
+
+.head{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-family: myFirstFont;
+    font-size: 2rem;
+    text-shadow: 0 0 20px #fff, 0 0 30px #697bfc, 0 0 40px #697bfc, 0 0 50px #697bfc, 0 0 60px #697bfc, 0 0 70px #697bfc, 0 0 80px #697bfc;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.bg1{
+    background-image: url(Images/arya\ stark.jpg);
+}
+
+.bg2{
+    background-image: url(images/tyrion.jpg);
+}
+
+.bg3{
+
+    width: 100%;
+    background-image: url(images/sansa.jpg);
+}
+
+.bg4{
+    background-image: url(images/john.jpg);
+}
+
+.bg5{
+    background-image: url(images/denery.jpg);
+}
+
+.bg6{
+    background-image: url(images/cersei.jpg);
+}
+
+.bg7{
+    background-image: url(images/margaery1.jpg);
+}
+
+h2{
+    font-size: 3rem;
+    padding: 0rem 10rem;
+
+}
+
+.text{
+    font-size: 1.4rem;
+    padding: 40px;
+    margin: 5px;
+    z-index: -1;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
